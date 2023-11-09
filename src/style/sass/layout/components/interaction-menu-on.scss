@@ -1,0 +1,72 @@
+/* ====== interaction-menu.on ======= */
+.interaction-menu.on {
+    backdrop-filter: blur(.5rem);
+    background:hsla(0, 0%, 87%, 0.9) url('../../../../../assets/imgs/index/wolf-happy256x256.svg') no-repeat bottom center/100%;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0.2rem 0 0.5rem -0.45rem #000;
+    width: 30rem;
+}
+
+.interaction-menu.on .hamburguer {
+    left: initial;
+    right: 10px;
+    top: 10px;
+}
+
+.interaction-menu.on .hamburguer:focus,
+.interaction-menu.on .hamburguer:hover {
+    background-color: #fff;
+}
+
+.interaction-menu.on span {
+    border-radius: 5px;
+}
+
+.interaction-menu.on span:first-child {
+    border-width: 0;
+    width: 0;
+}
+
+.interaction-menu.on span:nth-child(2) {
+    transform: rotate(-45deg) translate(-7%, 50%);
+}
+
+.interaction-menu.on span:last-child {
+    transform: rotate(45deg) translate(-10%, -100%);
+}
+
+.interaction-menu.on .menu-items__group {
+    display: block;
+    opacity: 1;
+}
+
+.interaction-menu.on .menu__item.on button {
+    background-color: #fff;
+}
+
+.interaction-menu.on .menu__item.on .suggestion {
+    height: 20rem;
+}
+
+.interaction-menu.on .menu__item.on .contact {
+    height: 9.36rem;
+}
+
+.interaction-menu.on .menu__item.on .donation {
+    height: 28.32rem;
+}
+
+.interaction-menu.on .menu__item.on i {
+    transform: rotate(180deg);
+}
+
+.interaction-menu.on .suggestion__wrapper.on,
+.interaction-menu.on .contact__wrapper.on,
+.interaction-menu.on .donation__wrapper.on {
+    display: block;
+    width: 95%;
+}
+
+.interaction-menu.on .donation__wrapper.on img {
+    margin: 0 auto;
+}

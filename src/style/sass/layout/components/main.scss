@@ -1,0 +1,26 @@
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-area: main;
+    padding-bottom: 3vw;
+    row-gap: 20vh;
+}
+
+.wrapper.inside main {
+    justify-content: flex-end;
+}
+
+.hero__img {
+    order: -1;
+    width: 297px;
+
+    position: absolute; /* relative to the .container element in the sass/layout/base.scss stylesheet. */
+    bottom: -0.3rem;
+    right: -4.78rem;
+}
+
+.hero__img img {
+    width: 100%;
+}

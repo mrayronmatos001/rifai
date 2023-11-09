@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/imgs/favicon50x63.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="module" src="./script/main.js" defer></script>
+    <title>RIFAÍ</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div id="sidemenu" class="interaction-menu" data-sidemenu aria-labelledby="interaction-menu">
+                <button id="hamburguer" class="hamburguer" data-sidemenu="hamburguer" type="button" aria-label="abrir menu" aria-expanded="false" aria-controls="sidemenu">
+                    <div class="span__group" aria-hidden="true">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </div>
+                </button>
+                <div class="menu-items__group">
+                    <h3>
+                        <img src="../assets/imgs/index/rifai-title365x164.png" alt="um ticket de rifa com o nome Rifaí">
+                    </h3>
+                    <ul class="items__list">
+                        <li class="menu__item" data-sidemenu="item" name="Suggestion">
+                            <button id="suggetion" class="suggestion" name="sugestões" aria-label="abrir item de menu de sugestões" aria-expanded="false" aria-controls="suggetion">
+                                <div class="title">
+                                    Sugestões
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="suggestion__wrapper content">
+                                    <form name="suggestionForm" action="">
+                                        <textarea class="suggestion__text focused" data-sidemenu="textarea" name="suggestion__text" cols="30" rows="5" placeholder="Digite alguma sugestão aqui..."></textarea>
+                                        <input type="submit" value="Enviar">
+                                    </form>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="menu__item" data-sidemenu="item" name="Contact">
+                            <button id="contact" class="contact" name="contato" aria-label="abrir item de menu de contato" aria-expanded="false" aria-controls="contact">
+                                <div class="title">
+                                    Contato
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="contact__wrapper content focused"  tabindex="0"><span>suporte.rifaai@gmail.com</span></div>
+                            </button>
+                        </li>
+                        <li class="menu__item" data-sidemenu="item" name="Donation">
+                            <button id="donation" class="donation" name="doações" aria-label="abrir item de menu de doação" aria-expanded="false" aria-controls="donation">
+                                <div class="title">
+                                    Doação
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="donation__wrapper content">
+                                    <img class="focused" src="../assets/imgs/index/pix-t200x200.png" alt="Pix Qrcode" tabindex="0">
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                <nav> 
+                    <a href="#" data-container="create" class="create" data-spa="changer"> <!-- spa: index -->
+                        <div class="create__text">Criar Rifa</div>
+                    </a>
+                    <a href="#" class="login"  data-container="login" aria-label="loguín"> <!-- layout -[login] -->
+                        <div class="login__wrapper">
+                            <div class="login-profile"></div>
+                            <span class="login__text">
+                                Olá,
+                                <span class="login__text--user">Usuário</span>
+                            </span>
+                        </div>
+                    </a>
+                </nav>
+            </header>
+            <main>
+                <section class="hero-title" data-spa="index"> <!-- spa: index -->
+                    <h1>Vai uma Rifa aí?</h1>
+                    <h2>Compre sua rifa agora e concorra a prêmios!</h2>
+                    <button class="buy" type="button" data-spa="changer" aria-label="comprar rifa">Comprar</button>
+                </section>
+                <section class="infos__wrapper" data-spa="index"> <!-- spa: index -->
+                    <div class="infos">
+                        <div class="info">
+                            <img src="../assets/imgs/index/calendar72x80.svg" alt="um calendário com o número 1 no centro indicando dia do mês">
+                            <h3>Datas de Premiações</h3>
+                            <p>A premiação acontecerá no dia do sorteio da loteria da caixa que iniciar após o esgotamento de tickets da rifa.</p>
+                        </div>
+                        <div class="info">
+                            <img src="../assets/imgs/index/lottery80x80.svg" alt="duas bolas de bilhar numeradas">
+                            <h3>Resultados</h3>
+                            <p>O número do sorteio será o primeiro número anunciado pela loteria após o esgotamento de tickets.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="hero__img">
+                    <img src="../assets/imgs/index/wolf-ticket314x450.svg" alt="um lobo cartoonizado segurando um ticket de rifa">
+                </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div class="signin disappear" data-spa="login">
+        <div class="signin__wrapper">
+            <button type="button" class="x">
+                <i class="fas fa-x"></i>
+            </button>
+            <h1>Bem-vindo ao <span>Rifaí</span></h1>
+            <form name="signinForm" action="">
+                <div class="form__group">
+                    <label for="inputEmail">Email</label>
+                    <input id="inputEmail" class="email" name="email" type="email" autocomplete="new-email">    
+                </div>
+                <div class="form__group">
+                    <label for="inputPassword">Password</label>
+                    <input id="inputPassword" class="password" name="password" type="password">
+                    <button class="eye" type="button">
+                        <i class="fas fa-eye slash"></i>
+                    </button>
+                </div>
+                <div class="form__group">
+                    <input type="submit" value="LOGIN">
+                </div>
+            </form>
+            <div class="dialog__wrapper">
+                <a href="#" class="password-forgot">Esqueceu a senha? </a>
+                <span class="signuper">Não tem uma conta? 
+                    <a href="#" class="signuper__link" data-spa="changer">Cadastre-se</a>
+                </span>
+                <div class="error">
+                    <span class="signin__error">preencha os campos vazios</span>
+                    <span class="load-bar"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* index */
+nav .create .create__text {
+    border-radius: 0.5rem;
+    padding: 1.453rem 0.5rem; 
+}
+
+.hero-title {
+    line-height: 4rem;
+}
+
+.hero-title h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.hero-title h2 {
+    font-size: 1.9rem;
+}
+
+.buy {
+    animation: pulse 1s infinite;
+
+    background-color: var(--tm-rose);
+    border-radius: 0.5rem;
+    color: #FFF;
+    cursor: pointer;
+    font: bold 1.5rem/1 monospace;
+    height: 4rem;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+    outline: 0 solid var(--tm-rose);
+    transition: background-color .4s;
+    width: 20rem;
+}
+
+.buy:focus,
+.buy:hover {
+    background-color: var(--hv-tm-rose);
+}
+
+.buy:focus {
+    border: 3.5px solid var(--outline-color);
+    outline-color: var(--outline-color);
+}
+
+@keyframes pulse {
+    to {
+        outline: 0.75rem solid transparent;
+    }
+}
+
+.infos {
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 230px;
+    row-gap: 1rem;
+    max-width: 31.5rem;
+}
+
+.info img {
+    filter: brightness(1.2);
+    width: 4rem;
+    height: 4rem;
+}
+
+.info h3 {
+    font: bold 2rem/1 monospace;
+}
+
+.info p {
+    font-size: 1.3rem;
+    text-align: justify;
+}

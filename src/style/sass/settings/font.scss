@@ -1,0 +1,38 @@
+/* fonts */
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('../../../../assets/fonts/fa-solid-900.woff2') format('woff2'), url('../../../../assets/fonts/fa-solid-900.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'kanit';
+    font-style: normal;
+    font-weight: lighter;
+    font-display: auto;
+    src: url('../../../../assets/fonts/kanit.ttf') format('truetype')
+}
+
+.fas {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+}
+
+.fa-chevron-down::before {
+    content: "\f078";
+}
+
+.fa-x::before {
+    content: "\58"; 
+}
+
+.fa-eye::before {
+    content: "\f06e"; 
+}
+
+.fa-eye.slash::before {
+    content: "\f070"; 
+}

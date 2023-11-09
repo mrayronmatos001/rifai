@@ -1,0 +1,199 @@
+/* media-querys */
+@media screen and (max-width: 930px) {
+    html {
+        font-size: 90%;
+    }
+
+    .wrapper {
+        background: #bfcae8 url('') 0/150% no-repeat;
+    }
+
+    .container {
+        background: var(--bg-container) url('');
+    }
+
+    .hamburguer {
+        transform: scale(0.8);
+
+        top: calc(3vw - 0.8rem);
+    }
+
+    .interaction-menu.on .hamburguer {
+        right: -10px;
+        top: -10px;
+    }
+
+    .interaction-menu.mon .menu-items__group h3 img {
+        margin-right: 5%;
+    }
+
+    .interaction-menu.mon .menu__item .title {
+        justify-content: center;
+    }
+
+    .interaction-menu.mon .menu__item .title i {
+        display: none;
+    }
+
+    .interaction-menu.on .menu__item.on .suggestion {
+        height: 17.5rem;
+    }
+
+    .interaction-menu.on .menu__item.on .suggestion input {
+        margin: 0 auto;
+    }
+    
+    .interaction-menu.on .menu__item.on .contact {
+        height: 9.36rem;
+    }
+    
+    .interaction-menu.on .menu__item.on .donation {
+        height: 18rem;
+    }
+
+    .interaction-menu.on .donation__wrapper.on img {
+        width: 80%;
+    }
+
+    .interaction-menu.mon .contact__wrapper::before {
+        content: "toque para copiar";
+
+        left: 1.3rem;
+    }
+
+    .interaction-menu.mon .contact__wrapper:active::before {
+        content: "copiado";
+    }
+
+    .interaction-menu.mon .donation__wrapper::before {
+        content: "toque para copiar url";
+    }
+
+    .interaction-menu.mon .donation__wrapper:active::before {
+        content: "copiada";
+    }
+
+
+    main {
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 5%;
+        row-gap: 0;
+        
+        position: relative;
+    }
+
+    main section {
+        text-align: center;
+    }
+
+    .hero__img {
+        position: static;
+    }
+
+    .hero-title {
+        padding: 5% 0% 10% 0;
+    }
+
+    .infos__wrapper {
+        align-items: flex-end;
+        display: flex;
+        height: 100%;
+    }
+
+    .infos {
+        justify-content: center;
+
+        position: relative;
+        bottom: 0vw;
+    }
+
+    .info img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .info p:last-child {
+        padding-bottom: 6vw;
+    }
+
+    header {
+        padding-top: 6vw;
+    }
+
+    header nav a:first-child div {
+        line-height: 1;
+        transform: translateY(-.65rem);
+        text-align: center;
+        white-space: wrap;
+        width: 100px;
+    }
+
+    header nav {
+        column-gap: 0.1rem;
+    }
+
+    nav .create .create__text {
+        font-size: 1.5rem;
+        width: 75px;
+        transform: translateY(-17px);
+    }
+
+    nav .login .login-profile {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    nav .login .login__text {
+        display: none;
+    }
+
+    nav .login .login__wrapper {
+        transform: translateY(-0.65rem);
+    }
+
+    main {
+        padding-bottom: 0;
+    }
+
+    .hero__img {
+        width: 230px;
+    }
+
+    .hero__img img {
+        width: 90%;
+    }
+
+    .hero-title {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .hero-title h1 {
+        font-size: clamp(3.5rem, 10vw, 5rem);
+        line-height: 4rem;
+    }
+
+    .hero-title h2 {
+        line-height: 1.3;
+    }
+
+    .hero-title button {
+        font-size: 2rem;
+        margin: 0 auto;
+        width: 15rem;
+    }
+
+    .infos__wrapper {
+        align-items: flex-end;
+        display: flex;
+        height: 100%;
+        width: 230px;
+    }
+
+    .infos {
+        gap: 30px;
+    }
+}

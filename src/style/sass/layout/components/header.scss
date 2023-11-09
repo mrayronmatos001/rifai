@@ -1,0 +1,56 @@
+/* header */
+header {
+    display: flex;
+    grid-area: header;
+    justify-content: flex-end;
+    padding-top: 3vw;
+}
+
+header nav {
+    display: flex;
+    column-gap: 4rem;
+    font-size: 2rem;
+}
+
+nav .login {
+    cursor: pointer;
+}
+
+nav .login .login__wrapper {
+    border-radius: 0.5rem;
+    column-gap: 0.75rem;
+    display: flex;
+    padding: 0.5rem;
+}
+
+header nav a:first-child div,
+nav .login .login__wrapper {
+    transform: translateY(-1.3rem);
+}
+
+header nav a:first-child:focus div,
+nav .login:focus .login__wrapper,
+header nav a:first-child div:hover,
+nav .login .login__wrapper:hover {
+    background-color: var(--hv-gray-t50);
+}
+
+nav .login .login-profile {
+    background: url('../../../../../assets/imgs/index/user.png') center/cover no-repeat;
+    height: 5rem;
+    width: 5rem;
+}
+
+nav .login .login__text {
+    color: var(--tm-yellow);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    padding-top: 0.75rem;
+}
+
+nav .login .login__text--user {
+    color: #000;
+    font-size: 2rem;
+}
